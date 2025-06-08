@@ -69,6 +69,7 @@ public class form extends JFrame {
         fornLabel.setHorizontalAlignment(JLabel.CENTER);
         fornLabel.setOpaque(true);
         fornLabel.setBackground(backgroundColor);
+        fornLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         c0 = new JCheckBox();
         c0.setBounds(1040, 100, 100, 25);
         c0.setBackground(new Color(250, 250, 250));
@@ -77,7 +78,7 @@ public class form extends JFrame {
         nomeLabel = new JLabel("Nome");
         nomeLabel.setBounds(20, 130, 150, 25);
         nomeLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        nomeLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        nomeLabel.setHorizontalAlignment(JLabel.CENTER); 
         nomeLabel.setOpaque(true);
         nomeLabel.setBackground(backgroundColor);
         nomeField = new JTextField();
@@ -87,9 +88,10 @@ public class form extends JFrame {
         rgLabel = new JLabel("RG / inscrição Estadual");
         rgLabel.setBounds(20, 160, 150, 25);
         rgLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        rgLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        rgLabel.setHorizontalAlignment(JLabel.CENTER); 
         rgLabel.setOpaque(true);
         rgLabel.setBackground(backgroundColor);
+        rgLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         rgField = new JTextField();
         rgField.setBounds(180, 160, 260, 25);
 
@@ -97,9 +99,10 @@ public class form extends JFrame {
         oxLabel = new JLabel("Orgão Expeditor");
         oxLabel.setBounds(450, 160, 150, 25);
         oxLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        oxLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        oxLabel.setHorizontalAlignment(JLabel.CENTER); 
         oxLabel.setOpaque(true);
         oxLabel.setBackground(backgroundColor);
+        oxLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         oxField = new JTextField();
         oxField.setBounds(610, 160, 530, 25);
 
@@ -107,7 +110,7 @@ public class form extends JFrame {
         emailLabel = new JLabel("Email");
         emailLabel.setBounds(20, 190, 150, 25);
         emailLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        emailLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        emailLabel.setHorizontalAlignment(JLabel.CENTER); 
         emailLabel.setOpaque(true);
         emailLabel.setBackground(backgroundColor);
         emailField = new JTextField();
@@ -117,7 +120,7 @@ public class form extends JFrame {
         cepLabel = new JLabel("CEP");
         cepLabel.setBounds(450, 190, 150, 25);
         cepLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        cepLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        cepLabel.setHorizontalAlignment(JLabel.CENTER); 
         cepLabel.setOpaque(true);
         cepLabel.setBackground(backgroundColor);
         cepField = new JTextField();
@@ -127,7 +130,7 @@ public class form extends JFrame {
         paisLabel = new JLabel("País");
         paisLabel.setBounds(20, 220, 150, 25);
         paisLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        paisLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        paisLabel.setHorizontalAlignment(JLabel.CENTER); 
         paisLabel.setOpaque(true);
         paisLabel.setBackground(backgroundColor);
         paisField = new JTextField("BRASIL");
@@ -138,7 +141,7 @@ public class form extends JFrame {
         ufLabel = new JLabel("UF ...");
         ufLabel.setBounds(450, 220, 150, 25);
         ufLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        ufLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        ufLabel.setHorizontalAlignment(JLabel.CENTER); 
         ufLabel.setOpaque(true);
         ufLabel.setBackground(backgroundColor);
         ufField = new JTextField();
@@ -151,28 +154,28 @@ public class form extends JFrame {
         muniLabel = new JLabel("Município");
         muniLabel.setBounds(20, 250, 150, 25);
         muniLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        muniLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        muniLabel.setHorizontalAlignment(JLabel.CENTER); 
         muniLabel.setOpaque(true);
         muniLabel.setBackground(backgroundColor);
         muniField = new JTextField();
         muniField.setBounds(180, 250, 960, 25);
-        muniField.setBackground(grey); // ajustado para terminar em 1140
+        muniField.setBackground(grey); 
 
         // Logradouro
         lograLabel = new JLabel("Logradouro");
         lograLabel.setBounds(20, 280, 150, 25);
         lograLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        lograLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        lograLabel.setHorizontalAlignment(JLabel.CENTER); 
         lograLabel.setOpaque(true);
         lograLabel.setBackground(backgroundColor);
         lograField = new JTextField();
-        lograField.setBounds(180, 280, 960, 25); // ajustado para terminar em 1140
+        lograField.setBounds(180, 280, 960, 25); 
 
         // Número
         numLabel = new JLabel("Número");
         numLabel.setBounds(20, 310, 150, 25);
         numLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        numLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        numLabel.setHorizontalAlignment(JLabel.CENTER); 
         numLabel.setOpaque(true);
         numLabel.setBackground(backgroundColor);
         numField = new JTextField();
@@ -182,17 +185,18 @@ public class form extends JFrame {
         comLabel = new JLabel("Complemento");
         comLabel.setBounds(450, 310, 150, 25);
         comLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        comLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        comLabel.setHorizontalAlignment(JLabel.CENTER); 
         comLabel.setOpaque(true);
         comLabel.setBackground(backgroundColor);
+        comLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         comField = new JTextField();
-        comField.setBounds(610, 310, 530, 25); // ajustado para terminar em 1140
+        comField.setBounds(610, 310, 530, 25); 
 
         // Bairro
         baiLabel = new JLabel("Bairro");
         baiLabel.setBounds(20, 340, 150, 25);
         baiLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        baiLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        baiLabel.setHorizontalAlignment(JLabel.CENTER); 
         baiLabel.setOpaque(true);
         baiLabel.setBackground(backgroundColor);
         baiField = new JTextField();
@@ -202,9 +206,10 @@ public class form extends JFrame {
         teleLabel = new JLabel("Telefone");
         teleLabel.setBounds(450, 340, 150, 25);
         teleLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        teleLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        teleLabel.setHorizontalAlignment(JLabel.CENTER); 
         teleLabel.setOpaque(true);
         teleLabel.setBackground(backgroundColor);
+        teleLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         teleField = new JTextField();
         teleField.setBounds(610, 340, 260, 25); // termina em 870
 
@@ -212,9 +217,10 @@ public class form extends JFrame {
         sitLabel = new JLabel("Situação");
         sitLabel.setBounds(880, 340, 90, 25);
         sitLabel.setBorder(BorderFactory.createLineBorder(borderColor, borderThickness));
-        sitLabel.setHorizontalAlignment(JLabel.CENTER); // Centraliza o texto
+        sitLabel.setHorizontalAlignment(JLabel.CENTER); 
         sitLabel.setOpaque(true);
         sitLabel.setBackground(backgroundColor);
+        sitLabel.setFont(new Font("Arial", Font.PLAIN, 12));
         c1 = new JCheckBox("Ativo");
         c1.setBounds(980, 340, 80, 25);
         c1.setBackground(new Color(250, 250, 250));
