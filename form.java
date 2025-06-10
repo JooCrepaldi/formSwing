@@ -23,6 +23,7 @@ public class form extends JFrame {
         panel = new JPanel();
         panel.setLayout(null);
         panel.setBackground(new Color(250, 250, 250));
+        
 
         // definição de cores
         Color borderColor = new Color(194, 194, 194);
@@ -33,6 +34,7 @@ public class form extends JFrame {
         Color colorPrimary = new Color(235, 113, 52);
 
         Color grey = new Color(230, 230, 230);
+
 
         // titulo
         titulo = new JLabel("Cadastro de Pessoa");
@@ -288,18 +290,17 @@ public class form extends JFrame {
         panel.add(exButton);
 
         // funções
-        confButton.addActionListener(new ActionListener() {
+        confButton.addActionListener(new ActionListener() {//btn confimar
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(null, "Confirmado!", "Confirmação", JOptionPane.INFORMATION_MESSAGE);
             }
         });
         
-        // ação do botão limpar
-        limButton.addActionListener(new ActionListener() {
+        
+        limButton.addActionListener(new ActionListener() {//btn limpar
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Limpar todos os campos
                 cpfField.setText("");
                 nomeField.setText("");
                 rgField.setText("");
@@ -323,7 +324,7 @@ public class form extends JFrame {
 
         this.setContentPane(panel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(1200, 550); // Aumentado largura para 1200 para acomodar os checkboxes
+        this.setSize(1200, 550);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
